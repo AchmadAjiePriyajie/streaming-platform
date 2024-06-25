@@ -62,7 +62,6 @@ public class MovieController {
         return "dashboard";
     }
 
-
     @GetMapping("/admin/movie/delete/{id}")
     public String deleteMovieById(@PathVariable("id") Long id, Model model) {
         Movie movie = movieService.getMovieById(id);
